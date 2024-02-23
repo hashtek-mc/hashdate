@@ -8,12 +8,10 @@ public enum HashDateType {
     SHORT("dd/mm/yyyy HH:mm:ss");           // 05/01/2021 14:17:42
 
 
-    String format;
+    private final String format;
 
 
     /**
-     * Creates a new HashDateType.
-     *
      * @param   format  SimpleDateFormat format
      */
     HashDateType(String format)
@@ -23,8 +21,6 @@ public enum HashDateType {
 
 
     /**
-     * Returns type's format.
-     *
      * @return  Type's format
      */
     public String getFormat()

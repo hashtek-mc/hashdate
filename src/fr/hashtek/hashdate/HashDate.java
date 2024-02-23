@@ -2,6 +2,7 @@ package fr.hashtek.hashdate;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class HashDate {
 
@@ -14,7 +15,7 @@ public class HashDate {
      */
     public static String format(HashDateType type, Date date)
     {
-        return new SimpleDateFormat(type.getFormat()).format(date);
+        return new SimpleDateFormat(type.getFormat(), Locale.FRANCE).format(date);
     }
 
 }
