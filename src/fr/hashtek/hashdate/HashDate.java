@@ -4,7 +4,8 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-public class HashDate {
+public class HashDate
+{
 
     /**
      * Formats a given date following a given format.
